@@ -193,3 +193,5 @@ pip-selfcheck.json
 
 /data/raw/*
 /data/sparql/*
+
+db.sqlite3
