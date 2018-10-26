@@ -1,27 +1,20 @@
 """
 Preprocessor.
 """
-import MeCab
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-t = MeCab.Tagger('-Owakati')
 
 
 def tokenize(text):
-    """Tokenize Japanese text.
+    """Tokenize text.
 
     Args:
-        text: Japanese string.
+        text: string.
 
     Returns:
         A list of words.
     """
-    words = t.parse(text).rstrip().split()
-
-    return words
+    return text.strip().split(' ')
 
 
 def build_vectorizer():
-    vectorizer = TfidfVectorizer(tokenizer=tokenize)
-
-    return vectorizer
+    return TfidfVectorizer(tokenizer=tokenize)
