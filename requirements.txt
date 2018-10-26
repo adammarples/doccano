@@ -8,10 +8,14 @@ djangorestframework-filters==0.10.2
 Faker==0.8.8
 gunicorn==19.9.0
 mixer==6.0.1
+numpy==1.15.3
 psycopg2==2.7.5
 python-dateutil==2.7.3
 pytz==2018.4
+scikit-learn==0.20.0
+scipy==1.1.0
 six==1.11.0
+sklearn==0.0
 text-unidecode==1.2
 tornado==5.0.2
 whitenoise==3.3.1
